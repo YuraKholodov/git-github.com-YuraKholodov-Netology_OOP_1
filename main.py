@@ -75,7 +75,13 @@ class Student:
 
     def __str__(self):
         average = self.average_rating(self.grades)
-        return f"Имя: {self.name}\nФамилия: {self.surname}\nСредняя оценка за домашние задания: {average}\nКурсы в процессе изучения: {', '.join(self.courses_in_progress)}\nЗавершенные курсы: {', '.join(self.finished_courses)}"
+        return (f"""
+            Имя: {self.name}
+            Фамилия: {self.surname}
+            Средняя оценка за домашние задания: {average}
+            Курсы в процессе изучения: {', '.join(self.courses_in_progress)}
+            Завершенные курсы: {', '.join(self.finished_courses)}
+            """)
 
 
 class Mentor:
